@@ -1,0 +1,4 @@
+<h1 id="msg">Cargando...</h1>
+<script>
+fetch('/api/hora').then(r=>r.text()).then(t=>msg.innerText=t)
+</script>

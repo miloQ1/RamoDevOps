@@ -1,0 +1,14 @@
+# levantar todo
+docker-compose up -d --build
+
+# ver estado
+docker ps
+
+# logs
+docker-compose logs -f
+
+# bajar todo
+docker-compose down
+
+# borrar volumen (reset DB)
+docker-compose down -v
