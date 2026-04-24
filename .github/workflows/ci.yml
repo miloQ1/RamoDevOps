@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: ls -la
+      - run: date
+      - run: cat README.md
+      - run: echo "Workflow ejecutado correctamente"
