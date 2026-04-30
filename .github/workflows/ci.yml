@@ -31,7 +31,7 @@ jobs:
 
       - name: Tag frontend
         run: |
-          docker tag 2026_1_ao_isy1101_ejemplo01-frontend:latest \
+          docker tag ramodevops-frontend \
           ${{ secrets.ECR_REPOSITORY }}:latest
 
       - name: Push frontend
